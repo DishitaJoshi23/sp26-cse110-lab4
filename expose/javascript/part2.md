@@ -22,3 +22,11 @@ The function returns the array: [50, 100, 150]
 This is because each price in the input array: [100, 200, 300] gets multiplied by (1 - 0.5) which is 1- discount, and gets rounded to 2 decimal places, and pushed into the discounted array, which is then returned.
 
 ---
+## Question 5
+Line 12 will throw an error. This is because it is trying to access `i` which is not in scope. Since, `i` is declared using `let`, it is block-scoped. So, `i` is only accessible inside the for loop and basically doesn't exist outside the scope of the for loop. 
+
+---
+
+## Question 6
+Line 13 will throw an error. This is because it is trying to access `discountedPrice` which is not in scope. Since, `discountedPrice` is declared using `let`, it is block-scoped. So, `discountedPrice` is only accessible inside the for loop and basically doesn't exist outside the scope of the for loop. So, an error will be thrown at line 13 where it tries to access `discountedPrice`, which is not in scope.   
+
