@@ -29,3 +29,14 @@ Since `add` is `true`, the `if` block executes. Then,`result` variable is assign
 There will be an error thrown because the variable `result` is declared with `let`, which is block-scoped. This means that it is only accessible within the if block. Since, line 13 is outside the if-block, it can't access `result`.
  
 ---
+
+## Question 6
+We never reach Line 9 because Line 7 throws a TypeError. This is because `result` is declared as a `const` which means that it can't be reassigned. So, attempting to reassign it throws an error.
+
+---
+
+## Question 7
+Same as Question 6. We never reach Line 13 either because Line 7 throws a TypeError because it attempts to reassign a constant variable.
+
+---
+
