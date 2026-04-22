@@ -57,3 +57,19 @@ This is because line 12 prints the value of the variable `length`, which is decl
 The function returns [50, 100, 150]. This is because for each price, calculates the value for discounted price within the for loop and assigns it to discountedPrice variable. The value is then pushed into the `discounted` array that is to be returned. This array `discounted`, which is declared using `const` can be accessed and modified (just can't be reassigned) throughout this function. There won't be any errors.
 
 ---
+
+## Question 12
+
+A. student.name
+
+B. student['Grad Year']
+
+C. student.greeting()
+
+D. student['Favorite Teacher'].name
+
+E. student.courseLoad[0]
+
+---
+
+## Question 13
