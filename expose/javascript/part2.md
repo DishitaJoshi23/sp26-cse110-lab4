@@ -73,3 +73,37 @@ E. student.courseLoad[0]
 ---
 
 ## Question 13
+
+A.`'3' + 2`
+Output: 32
+This is because 3 is considered as a string and '+' with strings leads to string concatenation. So, even thoguh 2 is an integer type, it gets concatenated to '3', which is a string. 
+
+B.`'3' - 2`
+Output: 1
+This is because even though '3' is a string, '-' forces the string to convert to an integer. So, '3' gets converted into an integer and 2 gets substracted from 3. So, the output is: 3-2=1
+
+C. `3 + null`
+Output: 3
+Null gets converted to 0 for the mathematical operation to go through. So, output: 3+0 = 3
+
+D.  `'3' + null`
+Output: 3null
+This is because since 3 is a string, '+' behaves as a concatenator. So, null is converted to a string and gets concatenated to 3.
+
+E. `true + 3`
+Output: 4
+This is because true gets converted to 1. So, output: 1+3 = 4
+
+F. `false + null`
+Output: 0 
+Both false and null get converted to 0. So, output: 0+0 = 0
+
+G. `'3' + undefined`
+Output: 3undefined
+This is because undefined becomes a string and gets concatenated to 3. 
+
+H. `'3' - undefined`
+Output: NaN
+Because of '-', undefined gets converted to NaN (for Js to do the math). And, 3 is also converted to an integer. So, 3-NaN = NaN.
+
+---
