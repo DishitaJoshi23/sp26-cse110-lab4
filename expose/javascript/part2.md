@@ -28,5 +28,32 @@ Line 12 will throw an error. This is because it is trying to access `i` which is
 ---
 
 ## Question 6
-Line 13 will throw an error. This is because it is trying to access `discountedPrice` which is not in scope. Since, `discountedPrice` is declared using `let`, it is block-scoped. So, `discountedPrice` is only accessible inside the for loop and basically doesn't exist outside the scope of the for loop. So, an error will be thrown at line 13 where it tries to access `discountedPrice`, which is not in scope.   
+Line 13 will throw an error. This is because it is trying to access `discountedPrice` which is not in scope. Since, `discountedPrice` is declared using `let`, it is block-scoped. So, `discountedPrice` is only accessible inside the for loop and basically doesn't exist outside the scope of the for loop. So, an error will be thrown at line 13 where it tries to access `discountedPrice`, which is not in scope.  
 
+---
+
+## Question 7
+Line 14 will throw an error. This is because it is trying to access `finalPrice` which is not in scope. Since, `finalPrice` is declared using `let`, it is block-scoped. So, `finalPrice` is only accessible inside the for loop and basically doesn't exist outside the scope of the for loop. So, an error will be thrown at line 14 where it tries to access `finalPrice`, which is not in scope.  
+
+---
+
+## Question 8
+The function returns [50, 100, 150]. This is because for each price, calculates the value for discounted price within the for loop and push the value into the array that is to be returned. This array is `discounted`, which is declared using `let` that makes its scope the entire function. There won't be any errors. 
+
+---
+
+## Question 9 
+Line 11 will throw an error. This is because it is trying to access `i` which is not in scope. Since, `i` is declared using `let`, it is block-scoped. So, `i` is only accessible inside the for loop and basically doesn't exist outside the scope of the for loop. So, an error will be thrown at line 11 where it tries to access `i`, which is not in scope because it's outside the for loop. 
+
+---
+
+## Question 10
+Line 12 will print: 3
+This is because line 12 prints the value of the variable `length`, which is declared using `const`. This means that `length` has an unchangeable value and it's scope is the entire function. So, it will print `3` which is the length of the input array. This value is set to the variable `length` at the beginning of the function, and is never changed after that. 
+
+---
+
+## Question 11
+The function returns [50, 100, 150]. This is because for each price, calculates the value for discounted price within the for loop and assigns it to discountedPrice variable. The value is then pushed into the `discounted` array that is to be returned. This array `discounted`, which is declared using `const` can be accessed and modified (just can't be reassigned) throughout this function. There won't be any errors.
+
+---
