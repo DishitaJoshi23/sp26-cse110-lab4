@@ -11,5 +11,14 @@ This is because the line prints the value of the variable `discountedPrice` whic
 
 ---
 
+## Question 3
+Line 14 will print: 150 
+This is because the line prints the value of the variable `finalPrice` which is declared using `var`. Since, `var` is function-scoped, the value of `finalPrice` is still accessible even after the loop ends. On the last iteration of the loop, `discountedPrice = 150` so the value of `finalPrice` becomes `(150*100)/100` ,  which is equal to 150. So, 150 will be logged when line 14 is run.
 
+---
 
+## Question 4
+The function returns the array: [50, 100, 150]
+This is because each price in the input array: [100, 200, 300] gets multiplied by (1 - 0.5) which is 1- discount, and gets rounded to 2 decimal places, and pushed into the discounted array, which is then returned.
+
+---
