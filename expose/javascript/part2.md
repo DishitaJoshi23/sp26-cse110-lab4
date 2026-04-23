@@ -107,3 +107,41 @@ Output: NaN
 Because of '-', undefined gets converted to NaN (for Js to do the math). And, 3 is also converted to an integer. So, 3-NaN = NaN.
 
 ---
+
+## Question 14
+
+A. `'2' > 1`
+Output: True
+This is because 2 gets converted to an integer and 2>1. 
+
+B. `'2' < '12'`
+Output: False
+Here, the output will be false as a result of string comparison and it compares 2 with 1, and 2>1 in terms of strings.
+
+C. `2 == '2'`
+Output: True
+'2' gets converted to an integer and since, 2==2, the output will be true. 
+
+D. `2 === '2'`
+Output: False
+This is because '===' checks the value and the type. Since, '2' ≠ 2 (string ≠ integer), output is false. 
+
+E. `true == 2`
+Output: False
+This is because true gets converted to 1. Since, 1 ≠ 2, output is false. 
+
+F. `true === Boolean(2)`
+Output: True
+This is because Boolean(2) is also true. So, true = true, output is true. 
+
+---
+
+## Question 15
+The main difference between `==` and `===` is that:
+- `==` compares the values after type conversion
+- `===` compares the values before type conversion
+
+---
+
+
+
