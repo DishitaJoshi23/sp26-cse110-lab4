@@ -157,10 +157,23 @@ How the code works:
 - When called with [1, 2, 3] and doSomething, it multiples each number by 2 and adds it to newArr
 - So newArr ends up as [2, 4, 6], which is then returned. 
 
-
 ---
 
 ## Question 18 
 - part2-question18.js in repo
 
+---
+
+## Question 19
+Output: 
+
+1
+
+4
+
+3
+
+2
+
+This is because Js uses an event loop. So, any setTimeout callback will not be executed immediately. It will get pushed to a queue and only run after the current code finishes. So, the console.log prints 1. Then, the event to print 4 gets put in the code, as well as the event to print 3. Then, the current code finishes running by printing 2 and then the queue gets executed. 
 
