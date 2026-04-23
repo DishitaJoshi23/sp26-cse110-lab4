@@ -143,5 +143,24 @@ The main difference between `==` and `===` is that:
 
 ---
 
+## Question 16 
+- part2-question16.js in repo
+
+---
+
+## Question 17
+Result: [2, 4, 6]
+
+How the code works: 
+- modifyArray takes an array and a callback function.
+- It creates an empty array newArr, then loops through each element of the input array, passes it to the callback, and pushes the return value into newArr.
+- When called with [1, 2, 3] and doSomething, it multiples each number by 2 and adds it to newArr
+- So newArr ends up as [2, 4, 6], which is then returned. 
+
+
+---
+
+## Question 18 
+- part2-question18.js in repo
 
 
